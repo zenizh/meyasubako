@@ -1,0 +1,108 @@
+.meyasubako {
+  //
+  // Functions
+  //
+
+  @function whiten($color, $weight) {
+    @return mix($color, #fff, 100% - $weight);
+  }
+
+  //
+  // Variables
+  //
+
+  $theme_color: #39c;
+
+  $base_color: darken(mix(#333, $theme_color), 10%);
+
+  //
+  // Styles
+  //
+
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  width: 240px;
+  background-color: #fff;
+  color: $base_color;
+  font-size: 16px;
+  font-family:'Helvetica Neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  line-height: 1.5;
+
+  * {
+    box-sizing: border-box;
+  }
+
+  #{&}__heading {
+    cursor: pointer;
+    margin: 0;
+    padding: 8px 0 8px 16px;
+    border-radius: 2px 2px 0 0;
+    background-color: $theme_color;
+    color: #fff;
+    font-size: 80%;
+    font-weight: normal;
+    transition: 200ms;
+
+    &:hover {
+      background-color: darken($theme_color, 5%);
+      color: darken(#fff, 5%);
+    }
+  }
+
+  #{&}__container {
+    display: none;
+    overflow: hidden;
+    padding: 16px;
+    border-right: 1px solid whiten($base_color, 80%);
+    border-left: 1px solid whiten($base_color, 80%);
+  }
+
+  #{&}__message__container {
+    display: none;
+    margin-bottom: 8px;
+    padding: 8px;
+    border-radius: 2px;
+    background-color: whiten($theme_color, 95%);
+    // color: whiten($theme_color, 20%);
+    color: $theme_color;
+    font-size: 70%;
+  }
+
+  #{&}__message {
+    margin: 0;
+  }
+
+  #{&}__message--success {
+    display: none;
+  }
+
+  #{&}__content {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    margin-bottom: 8px;
+    padding: 8px;
+    border: 1px solid whiten($base_color, 80%);
+    border-radius: 2px;
+    color: $base_color;
+    font-size: 80%;
+    vertical-align: bottom;
+  }
+
+  #{&}__submit {
+    cursor: pointer;
+    float: right;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 2px;
+    background-color: $theme_color;
+    color: #fff;
+    transition: 200ms;
+
+    &:hover {
+      background-color: darken($theme_color, 5%);
+      color: darken(#fff, 5%);
+    }
+  }
+}
