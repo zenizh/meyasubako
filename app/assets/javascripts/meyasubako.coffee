@@ -5,18 +5,26 @@ class Meyasubako
 
   setToggleEvent: ->
     $('.meyasubako__heading').on 'click', ->
-      Meyasubako.toggle()
+      container = $('.meyasubako__container')
+
+      # Switch form visibility
+      if container.is(':visible') then container.hide() else container.show()
 
   setSubmitEvent: ->
     $('.meyasubako__submit').on 'click', ->
+      # Return if textarea is empty
       return false unless $('.meyasubako__content').val()
 
+      # Disable form
       $('.meyasubako__content').attr('disabled', 'disabled')
       $('.meyasubako__submit').attr('disabled', 'disabled')
 
+      # Show sending message
       $('.meyasubako__message__container').fadeIn()
 
-      interval = setInterval ->
+      # Blink message
+      interval =
+        setInterval ->
           $('.meyasubako__message--sending').fadeOut 500, ->
             $(this).fadeIn 500
         , 1000
@@ -29,15 +37,14 @@ class Meyasubako
           content:            $('.meyasubako__content').val()
 
         success: ->
+          # Clear animation
           $('.meyasubako__message--sending').stop()
+
+          # Stop blinking
           clearInterval(interval)
 
+          # Show success message
           $('.meyasubako__message--sending').hide()
           $('.meyasubako__message--success').fadeIn()
-
-  @toggle: ->
-    container = $('.meyasubako__container')
-
-    if container.is(':visible') then container.hide() else container.show()
 
 window.Meyasubako = Meyasubako
