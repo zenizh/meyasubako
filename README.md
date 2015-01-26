@@ -28,13 +28,13 @@ $ bundle
 
 At first, you have to add `require` to your asset files.
 
-In `app/views/javascripts/application.js`:
+In `app/assets/javascripts/application.js`:
 
 ```js
 //= require meyasubako
 ```
 
-In `app/views/stylesheets/application.css`:
+In `app/assets/stylesheets/application.css`:
 
 ```css
 /*
@@ -59,6 +59,23 @@ Meyasubako.configure do |config|
   config.from = 'username@example.com'
 end
 ```
+
+## Customize
+
+If you want to customize the theme color, set `$meyasubako_color` to your `app/assets/stylesheets/application.scss` like this:
+
+```scss
+/*
+ *= require_tree .
+ *= require_self
+ */
+
+$meyasubako_color: #ffa933;
+
+@import 'meyasubako';
+```
+
+![](doc/screenshot.png)
 
 ## Languages
 
