@@ -1,3 +1,9 @@
+//
+// Customizable variables
+//
+
+$meyasubako_color: #39c !default;
+
 .meyasubako {
   //
   // Functions
@@ -11,9 +17,7 @@
   // Variables
   //
 
-  $theme_color: #39c;
-
-  $base_color: darken(mix(#333, $theme_color), 10%);
+  $base_color: darken(mix(#333, $meyasubako_color), 10%);
 
   //
   // Styles
@@ -38,14 +42,14 @@
     margin: 0;
     padding: 8px 0 8px 16px;
     border-radius: 2px 2px 0 0;
-    background-color: $theme_color;
+    background-color: $meyasubako_color;
     color: #fff;
     font-size: 80%;
     font-weight: normal;
     transition: 200ms;
 
     &:hover {
-      background-color: darken($theme_color, 5%);
+      background-color: darken($meyasubako_color, 5%);
       color: darken(#fff, 5%);
     }
   }
@@ -63,8 +67,8 @@
     margin-bottom: 8px;
     padding: 8px;
     border-radius: 2px;
-    background-color: whiten($theme_color, 95%);
-    color: $theme_color;
+    background-color: whiten($meyasubako_color, 95%);
+    color: $meyasubako_color;
     font-size: 70%;
   }
 
@@ -95,12 +99,12 @@
     padding: 8px 16px;
     border: none;
     border-radius: 2px;
-    background-color: $theme_color;
+    background-color: $meyasubako_color;
     color: #fff;
     transition: 200ms;
 
     &:hover {
-      background-color: darken($theme_color, 5%);
+      background-color: darken($meyasubako_color, 5%);
       color: darken(#fff, 5%);
     }
   }
