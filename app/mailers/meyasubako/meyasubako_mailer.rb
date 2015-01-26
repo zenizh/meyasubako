@@ -1,9 +1,11 @@
 module Meyasubako
   class MeyasubakoMailer < ActionMailer::Base
+    default template_path: 'meyasubako_mailer'
+
     def email(content)
       @content = content
 
-      mail(to: 'kami30k@gmail.com', from: 'kami30k@gmail.com', template_path: 'meyasubako_mailer')
+      mail(to: 'kami30k@gmail.com', from: 'kami30k@gmail.com')
     end
   end
 end

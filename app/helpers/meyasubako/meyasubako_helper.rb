@@ -1,6 +1,6 @@
 module Meyasubako
   module MeyasubakoHelper
-    def meyasubakoa
+    def render_meyasubako
       render 'meyasubako/new'
     end
   end

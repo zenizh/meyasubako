@@ -1,4 +1,1 @@
-require "meyasubako/engine"
-
-module Meyasubako
-end
+require 'meyasubako/engine'
