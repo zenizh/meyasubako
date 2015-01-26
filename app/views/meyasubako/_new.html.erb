@@ -1,0 +1,27 @@
+<div class="meyasubako">
+  <h2 class="meyasubako__heading">Opinion Box</h2>
+
+  <div class="meyasubako__container">
+    <div class="meyasubako__message__container">
+      <p class="meyasubako__message meyasubako__message--sending">
+        Sending ...
+      </p>
+
+      <p class="meyasubako__message meyasubako__message--success">
+        Thank you for sending your opinion.
+      </p>
+    </div>
+
+    <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+
+    <textarea class="meyasubako__content" placeholder="Please send us your opinion."></textarea>
+
+    <input type="button" class="meyasubako__submit" value="Submit">
+  </div>
+
+  <script>
+
+  new Meyasubako();
+
+  </script>
+</div>
