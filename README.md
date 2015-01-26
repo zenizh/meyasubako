@@ -8,6 +8,8 @@ Meyasubako (目安箱) is "Opinion Box" in Japanese.
 
 ## Demo
 
+![](doc/demo.gif)
+
 ## Installation
 
 Add this line to your application's Gemfile:
