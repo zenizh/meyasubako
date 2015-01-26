@@ -1,0 +1,8 @@
+en:
+  meyasubako:
+    heading: Opinion Box
+    content: Please send us your opinion.
+    submit: Submit
+    message:
+      sending: Sending ...
+      success: Thank you for sending your opinion.

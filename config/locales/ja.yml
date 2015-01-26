@@ -1,0 +1,8 @@
+ja:
+  meyasubako:
+    heading: ご意見箱
+    content: あなたのご意見をお聞かせください。
+    submit: 送信する
+    message:
+      sending: 送信中 ...
+      success: ご意見をお聞かせいただき、ありがとうございました。

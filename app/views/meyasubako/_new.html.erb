@@ -1,22 +1,22 @@
 <div class="meyasubako">
-  <h2 class="meyasubako__heading">Opinion Box</h2>
+  <h2 class="meyasubako__heading"><%= I18n.t('meyasubako.heading') %></h2>
 
   <div class="meyasubako__container">
     <div class="meyasubako__message__container">
       <p class="meyasubako__message meyasubako__message--sending">
-        Sending ...
+        <%= I18n.t('meyasubako.message.sending') %>
       </p>
 
       <p class="meyasubako__message meyasubako__message--success">
-        Thank you for sending your opinion.
+        <%= I18n.t('meyasubako.message.success') %>
       </p>
     </div>
 
     <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
-    <textarea class="meyasubako__content" placeholder="Please send us your opinion."></textarea>
+    <textarea class="meyasubako__content" placeholder="<%= I18n.t('meyasubako.content') %>"></textarea>
 
-    <input type="button" class="meyasubako__submit" value="Submit">
+    <input type="button" class="meyasubako__submit" value="<%= I18n.t('meyasubako.submit') %>">
   </div>
 
   <script>
