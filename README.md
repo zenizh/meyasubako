@@ -1,5 +1,7 @@
 # Meyasubako
 
+[![Build Status](https://travis-ci.org/kami30k/meyasubako.svg)](https://travis-ci.org/kami30k/meyasubako)
+
 Meyasubako provides easy to install opinion box for Rails application.
 The submitted opinion is sent by ActionMailer.
 Please look at following demo.
