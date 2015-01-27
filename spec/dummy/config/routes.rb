@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   mount Meyasubako::Engine => "/meyasubako"
 
-  mount LetterOpenerWeb::Engine => "/letter_opener"
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine => "/letter_opener"
+  end
 
   root 'pages#index'
 end
