@@ -1,6 +1,7 @@
 # Meyasubako
 
 [![Build Status](https://travis-ci.org/kami30k/meyasubako.svg)](https://travis-ci.org/kami30k/meyasubako)
+[![Gem Version](https://badge.fury.io/rb/meyasubako.svg)](http://badge.fury.io/rb/meyasubako)
 
 Meyasubako provides easy to install opinion box for Rails application.
 The submitted opinion is sent by ActionMailer.
