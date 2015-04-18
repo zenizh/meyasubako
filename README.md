@@ -65,7 +65,7 @@ end
 
 ## Customize
 
-If you want to customize the theme color, set `$meyasubako_color` to your `app/assets/stylesheets/application.scss` like this:
+If you want to customize the theme color, set `$meyasubako-color` to your `app/assets/stylesheets/application.scss` like this:
 
 ```scss
 /*
@@ -73,7 +73,7 @@ If you want to customize the theme color, set `$meyasubako_color` to your `app/a
  *= require_self
  */
 
-$meyasubako_color: #ffa933;
+$meyasubako-color: #ffa933;
 
 @import 'meyasubako';
 ```
