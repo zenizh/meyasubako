@@ -17,7 +17,7 @@ $meyasubako-color: #39c !default;
   // Variables
   //
 
-  $base_color: darken(mix(#333, $meyasubako-color), 10%);
+  $base-color: darken(mix(#333, $meyasubako-color), 10%);
 
   //
   // Styles
@@ -28,7 +28,7 @@ $meyasubako-color: #39c !default;
   right: 20px;
   width: 240px;
   background-color: #fff;
-  color: $base_color;
+  color: $base-color;
   font-size: 16px;
   font-family:'Helvetica Neue', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
   line-height: 1.5;
@@ -58,8 +58,8 @@ $meyasubako-color: #39c !default;
     display: none;
     overflow: hidden;
     padding: 16px;
-    border-right: 1px solid whiten($base_color, 80%);
-    border-left: 1px solid whiten($base_color, 80%);
+    border-right: 1px solid whiten($base-color, 80%);
+    border-left: 1px solid whiten($base-color, 80%);
   }
 
   &__message__container {
@@ -86,9 +86,9 @@ $meyasubako-color: #39c !default;
     height: 120px;
     margin-bottom: 8px;
     padding: 8px;
-    border: 1px solid whiten($base_color, 80%);
+    border: 1px solid whiten($base-color, 80%);
     border-radius: 2px;
-    color: $base_color;
+    color: $base-color;
     font-size: 80%;
     vertical-align: bottom;
   }
