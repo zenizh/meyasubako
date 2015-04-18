@@ -1,5 +1,5 @@
 module Meyasubako
-  class Engine < ::Rails::Engine
+  class Engine < Rails::Engine
     isolate_namespace Meyasubako
 
     initializer 'meyasubako' do

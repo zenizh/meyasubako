@@ -2,7 +2,7 @@
 // Customizable variables
 //
 
-$meyasubako_color: #39c !default;
+$meyasubako-color: #39c !default;
 
 .meyasubako {
   //
@@ -17,7 +17,7 @@ $meyasubako_color: #39c !default;
   // Variables
   //
 
-  $base_color: darken(mix(#333, $meyasubako_color), 10%);
+  $base_color: darken(mix(#333, $meyasubako-color), 10%);
 
   //
   // Styles
@@ -37,24 +37,24 @@ $meyasubako_color: #39c !default;
     box-sizing: border-box;
   }
 
-  #{&}__heading {
+  &__heading {
     cursor: pointer;
     margin: 0;
     padding: 8px 0 8px 16px;
     border-radius: 2px 2px 0 0;
-    background-color: $meyasubako_color;
+    background-color: $meyasubako-color;
     color: #fff;
     font-size: 80%;
     font-weight: normal;
     transition: 200ms;
 
     &:hover {
-      background-color: darken($meyasubako_color, 5%);
+      background-color: darken($meyasubako-color, 5%);
       color: darken(#fff, 5%);
     }
   }
 
-  #{&}__container {
+  &__container {
     display: none;
     overflow: hidden;
     padding: 16px;
@@ -62,25 +62,25 @@ $meyasubako_color: #39c !default;
     border-left: 1px solid whiten($base_color, 80%);
   }
 
-  #{&}__message__container {
+  &__message__container {
     display: none;
     margin-bottom: 8px;
     padding: 8px;
     border-radius: 2px;
-    background-color: whiten($meyasubako_color, 95%);
-    color: $meyasubako_color;
+    background-color: whiten($meyasubako-color, 95%);
+    color: $meyasubako-color;
     font-size: 70%;
   }
 
-  #{&}__message {
+  &__message {
     margin: 0;
   }
 
-  #{&}__message--success {
+  &__message--success {
     display: none;
   }
 
-  #{&}__content {
+  &__content {
     resize: none;
     width: 100%;
     height: 120px;
@@ -93,18 +93,18 @@ $meyasubako_color: #39c !default;
     vertical-align: bottom;
   }
 
-  #{&}__submit {
+  &__submit {
     cursor: pointer;
     float: right;
     padding: 8px 16px;
     border: none;
     border-radius: 2px;
-    background-color: $meyasubako_color;
+    background-color: $meyasubako-color;
     color: #fff;
     transition: 200ms;
 
     &:hover {
-      background-color: darken($meyasubako_color, 5%);
+      background-color: darken($meyasubako-color, 5%);
       color: darken(#fff, 5%);
     }
   }

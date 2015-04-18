@@ -8,7 +8,7 @@ module Meyasubako
       mail(
         to:      Meyasubako.config.to,
         from:    Meyasubako.config.from,
-        subject: I18n.t('meyasubako.subject')
+        subject: t('meyasubako.subject')
       )
     end
   end
