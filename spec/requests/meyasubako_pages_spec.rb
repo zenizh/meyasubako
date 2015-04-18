@@ -28,7 +28,7 @@ describe 'Integration test', type: :feature, js: true do
       expect(page).to have_content 'Sending ...'
       expect(page).to have_content 'Thank you for sending your opinion.'
 
-      open_email 'username@example.com'
+      open_email 'test@example.com'
 
       expect(current_email).to have_content 'foo'
     end
