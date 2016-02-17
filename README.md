@@ -1,6 +1,6 @@
 # Meyasubako
 
-[![Build Status](https://travis-ci.org/kami30k/meyasubako.svg)](https://travis-ci.org/kami30k/meyasubako)
+[![Build Status](https://travis-ci.org/kami-zh/meyasubako.svg)](https://travis-ci.org/kami-zh/meyasubako)
 [![Gem Version](https://badge.fury.io/rb/meyasubako.svg)](http://badge.fury.io/rb/meyasubako)
 
 Meyasubako provides easy to install opinion box for Rails application.
@@ -90,7 +90,7 @@ If you want to add additional language, please send pull request :)
 
 ## Contributing
 
-1. Fork it ( https://github.com/kami30k/meyasubako/fork )
+1. Fork it ( https://github.com/kami-zh/meyasubako/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
