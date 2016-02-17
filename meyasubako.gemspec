@@ -6,8 +6,8 @@ Gem::Specification.new do |s|
   s.name        = 'meyasubako'
   s.version     = Meyasubako::VERSION
   s.authors     = 'kami'
-  s.email       = 'kami30k@gmail.com'
-  s.homepage    = 'https://github.com/kami30k/meyasubako'
+  s.email       = 'hiroki.zenigami@gmail.com'
+  s.homepage    = 'https://github.com/kami-zh/meyasubako'
   s.summary     = 'Easy to install opinion box for Rails application.'
   s.description = 'Easy to install opinion box for Rails application.'
   s.license     = 'MIT'
